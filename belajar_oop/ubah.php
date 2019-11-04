@@ -22,9 +22,7 @@ $data = $siswa -> infoedit($nama);
 	<button type="submit" name="ubah">Ubah</button>
 </form>
 
-<?php } ?>
-
-<?php
+<?php }
 
 if(isset($_POST['ubah'])){
 	$siswa -> ubah($_POST['id'],$_POST['nm'],$_POST['alamat'],$_FILES['foto']);

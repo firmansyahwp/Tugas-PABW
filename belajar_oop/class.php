@@ -36,7 +36,7 @@ class siswa{
 		$namafoto = $foto['name'];
 		$lokasifoto = $foto['tmp_name'];
 		move_uploaded_file($lokasifoto, "foto/$namafoto");
-		$this -> koneksi -> query("update siswa set (nama,alamat,foto) values ('$nama','$alamat','$namafoto') where id_siswa = '$id'");
+		$this -> koneksi -> query("update siswa set nama='$nama', alamat='$alamat', foto='$namafoto' where id_siswa = '$id'");
 	}
 
 }
