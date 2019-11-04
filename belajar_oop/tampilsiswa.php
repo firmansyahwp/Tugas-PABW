@@ -12,6 +12,7 @@ $datasiswa = $siswa -> set_siswa();
 		<th>Nama</th>
 		<th>Alamat</th>
 		<th>Foto</th>
+		<th colspan="2">Aksi</th>
 	</tr>
 </thead>
 <tbody>
@@ -23,8 +24,12 @@ $datasiswa = $siswa -> set_siswa();
 		<td><?php echo $value['nama']; ?></td>
 		<td><?php echo $value['alamat']; ?></td>
 		<td><?php echo $value['foto']; ?></td>
+		<td>
+			<a href="ubah.php?nama=<?php echo $value['nama']; ?>">Ubah</a>
+			<a href="hapus.php?nama=<?php echo $value['nama']; ?>">Hapus</a>
+		</td>
 	</tr>
 	<?php } ?>
-</tbody>	
+</tbody>
 </table>
 <a href="tambahsiswa.php">Tambah Data</a>

@@ -17,6 +17,7 @@ class siswa{
 		echo "<br>";
 		echo $this -> alamat;
 	}
+	
 }
 
 $siswa = new siswa();

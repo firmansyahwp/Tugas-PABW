@@ -1,11 +1,11 @@
 <h2>Tambah Siswa</h2>
 <form method="POST" enctype=multipart/form-data>
 	<label>Nama</label>
-	<input type="text" name="nm"><br>
+	<input type="text" name="nm" value=""><br>
 	<label>Alamat</label>
-	<textarea name="alamat"></textarea><br>
+	<textarea name="alamat" value=""></textarea><br>
 	<label>Foto</label>
-	<input type="file" name="foto"><br>
+	<input type="file" name="foto" value=""><br>
 
 	<button type="submit" name="kirim">Simpan</button>
 </form>
